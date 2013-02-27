@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">紫冬口述</string>
+    <string name="load_to_refresh">更多</string>
+    <string name="doing_update">加载中…</string>
+    <string name="update_time">更新于:</string>
+    <string name="tip">提示</string>
+    <string name="OK">确定</string>
+    <string name="CANCEL">取消</string>
+    <string name="exitTip">确实要退出程序吗?</string>
+    
+    <string name="zts_simuTalk">语音翻译</string>
+    <string name="zts_answer_question">有缘问答</string>
+    <string name="zts_my_lib">我的词库</string>
+    <string name="zts_my_setting">设&#160;置&#160;</string>
+    <string name="userTip">提示</string>
+    <string name="back">返回</string>
+    <string name="points">…</string>
+    <string name="failedgetdata">获取数据失败！</string>
+    <!-- shopping string modified by zengsonghai -->
+    <string name="searchkey">请输入搜索关键字</string>
+    <!-- &#160;&#160;&#160;&#160; -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="sdcard_error">"SDCARD异常，请检查您的SDcard,或重新安装！"</string>
+    <string name="noSDCARD">没有发现外部存储，请安装SDCARD后再使用本软件。</string>
+    <string name="noSDCARDmem">外部存储已满，请清理SDCARD。</string>
+    <string name="noSDCARDmemConfirm">继续使用本软件可能会自动退出,继续吗?</string>
+    <string name="dwStateStoped">停止</string>
+    <string name="dwStateStoping">停止中</string>
+    <string name="dwStateDowning">正在下载</string>
+    <string name="dwStateCover">下载封面</string>
+    <string name="dwStateWaiting">等待</string>
+    <string name="dwStateConneting">连接中</string>
+    <string name="dwStateError">错误</string>
+    <string name="current_play">当前播放</string>
+    <string name="loading">加载中…</string>
+    <!-- 当前播放 -->
+    <string-array name="playStatus">
+        <item></item>
+        <item>正在连接</item>
+        <item>正在缓冲</item>
+        <item>播放中</item>
+        <item>暂停</item>
+        <item>停止</item>
+        <item>网络错误</item>
+        <item>错误</item>
+    </string-array>
+    <string name="btn_trans">翻译</string>
+    <string name="trans_btn_record">点击说话</string>
+    <string name="ch2en">中->英</string>
+    <string name="en2ch">英->中</string>
+    <string name="empty_list_text">当前记录为空</string>
+    <string name="btn_speak">录入 </string>
+    <string name="btn_send">发短信 </string>
+    <string name="btn_clear">清空 </string>
+    <string name="btn_copy">复制</string>
+    <string name="btn_send_email">发邮件</string>
+    <string name="app_msc_id">appid=4eccb392</string>
+    <string name="zts_simuTalk_write">紫冬口述</string>
+    <string name="zts_simuTalk_set">设置</string>
+    <string name="btn_share">分享</string>
+    <string name="zts_simuTalk_clear">清除</string>
+    <string name="btn_back">返回</string>
+    <string name="voicehistory">口述记录</string>
+    <string name="historydetail">记录详情</string>
+    <string name="delSel">删除选中</string>
+    <string name="del">删除</string>
+    <string name="allSel">全选</string>
+    <string name="noSel">反选</string>
+    <string name="myAbout">帮助说明</string>
+    <string name="mySetting">我的设置</string>
+    <string name="myWeibo">我的微博</string>
+    <string name="saveZTspeech">添加口讯</string>
+    <string name="saveTitle">标题：</string>
+    <string name="save">保存</string>
+    <string name="add">添加</string>
+    <string name="play">播放</string>
+    <string name="stop">停止</string>
+    
+    <string name="net_address_error">网址错误，无法加载此页面..</string> 
+    
+    <string name="deleteHistory">您确定删除选中的记录？</string>
+    <string name="bindercount">账户绑定</string>
+    <string name="sina_binder">绑定新浪微博账户</string>
+    <string name="tencent_binder">绑定腾讯微博账户</string>
+    <string name="sohu_binder">绑定搜狐微博账户</string>
+    <string name="renren_binder">绑定人人微博账户</string>
+    
+    <string name="de_sina_binder">取消新浪微博账户绑定</string>
+    <string name="de_tencent_binder">取消腾讯微博账户绑定</string>
+    <string name="de_sohu_binder">取消搜狐微博账户绑定</string>
+    <string name="de_renren_binder">取消人人微博账户绑定</string>
+    
+    <string name="ztsTalk">紫冬口述</string>
+    <string name="history">历史记录</string>
+    <string name="binder">账号绑定</string>
+    <string name="settxt">我的设置</string>
+    <string name="help">帮助说明</string>
+    <string name="exit">退出程序</string>
+    
+    
+    <string name="titleisnull">标题不能为空！</string>
+    <string name="savecontentisnull">保存内容不能为空！</string>
+    <string name="sharecontentisnull">分享内容不能为空！</string>
+    <string name="contentisclear">内容已清空！</string>
+    <string name="contentiscopytoclip">内容已复制到剪贴板！</string>
+    <string name="copycontentisnull">复制内容不能为空！</string>
+    <string name="smscontentisnull">短信内容不能为空！</string>
+    <string name="mailcontentisnull">邮件内容不能为空！</string>
+    <string name="currentcontentisnull">当前记录为空！</string>
+    <string name="currentitemisnull">没有记录</string>
+    
+    
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="twodaysbefore">前天</string>
+    <string name="ndaysbefore">天前</string>
+    
+    <string name="unbindertencent">您确定取消腾讯微博账号绑定？</string>
+    <string name="unbindersina">您确定取消新浪微博账号绑定？</string>
+    <string name="unbinderrenren">您确定取消人人微博账号绑定？</string>
+    <string name="bindersuccess">绑定成功</string>
+    <string name="binderfailed">绑定失败</string>
+    <string name="tencentsharedfailed">腾讯微博分享处理失败</string>
+    <string name="sharedfailed">分享失败！</string>
+    <string name="successaddtohistory">_成功添加到口讯记录_</string>
+    <string name="failedaddtohistory">_内容添加失败_</string>
+    <string name="savedataloading">正在保存数据&#8230;&#8230;&#8230;</string>
+    <string name="submitdataloading">正在提交数据&#8230;&#8230;&#8230;</string>
+    <string name="filenotexist">文件不存在！</string>
+    
+    <string name="selectmenu">选择操作</string>
+    
+    
+    <string name="on_key_register">一键注册</string>
+    <string name="sina_sync">新浪微博账号同步</string>
+    <string name="tencent_sync">腾讯微博账号同步</string>
+    <string name="sohu_sync">搜狐微博账号同步</string>
+    <string name="sina_oauth">新浪微博</string>
+    
+    <string name="neterror">网络连接出错</string>
+	<string name="oautherror">登陆认证出错</string>
+	<string name="oatherror">由于你的网络环境的问题,您需要返回从新授权,或者检查你的网络重新授权!!!</string>
+	<string name="oathsuccess">得到AccessToken的key和Secret,可以使用这两个参数进行授权登录了</string>
+	<string name="createItem">新建</string>
+	<string name="more">更多...</string>
+	<string name="renrenname">人人微博</string>
+    
+</resources>

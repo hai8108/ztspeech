@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="63dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <!-- style="@style/listitem_s" -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="40dp" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dip"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/itemtag"
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/date"
+            android:layout_marginLeft="11dp"
+            android:background="@color/background_gray_white" />
+
+        <ImageView
+            android:id="@+id/itemdot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/date"
+            android:background="@drawable/cover_nowdot" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/thought_bubble" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="250dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:paddingTop="8dip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="250dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="20dip"
+                android:gravity="left"
+                android:paddingTop="2dip"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" 
+            android:visibility="visible">
+
+            <ToggleButton
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/check_button"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" >
+            </ToggleButton>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

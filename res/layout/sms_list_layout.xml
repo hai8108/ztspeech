@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="380dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/tanchu_bg" >
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listViewLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/titleLayout"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/topDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/title"
+                android:background="@drawable/divider_horizontal_timeline" />
+
+            <ListView
+                android:id="@+id/smsList"
+                style="@style/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topDivider"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:drawingCacheQuality="auto"
+                android:gravity="center"
+                android:scrollingCache="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/smsList"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/divider_horizontal_timeline" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listViewLayout"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/BtnOK"
+                style="@style/dialog_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dip"
+                android:text="@string/OK" >
+            </Button>
+
+            <Button
+                android:id="@+id/BtnCancel"
+                style="@style/dialog_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dip"
+                android:text="@string/CANCEL" >
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

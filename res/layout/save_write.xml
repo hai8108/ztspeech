@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmiddle"
+    android:orientation="vertical" >
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/maintop"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/aboutBack"
+            style="@style/back_button"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" >
+        </Button>
+
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aboutBack"
+            android:layout_alignTop="@id/aboutBack"
+            android:layout_centerInParent="true"
+            android:autoText="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#663300"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/add"
+            style="@style/home_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/headbutton_select"
+            android:text="@string/save"
+            android:textColor="#663300"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/saveTitle"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textTitle"
+            android:hint="请自定义标题"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutRecord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/player_button"
+                android:gravity="center"
+                android:text="@string/play"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_speak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/btn_play"
+                android:layout_alignTop="@id/btn_play"
+                android:layout_toLeftOf="@id/btn_play"
+                android:background="@drawable/trans_btn_record"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:text="@string/btn_speak"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/editTextLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/linearLayoutRecord" >
+
+            <com.ztspeech.widget.ZTSEditText
+                android:id="@+id/mEditResult"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:focusable="true"
+                android:paddingTop="10dp"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

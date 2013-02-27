@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmiddle" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 头部 -->
+
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/maintop"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/back"
+                style="@style/back_button"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/back"
+                android:layout_alignTop="@id/back"
+                android:layout_centerInParent="true"
+                android:autoText="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/voicehistory"
+                android:textColor="#663300"
+                android:textSize="25sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+                android:id="@+id/add"
+                style="@style/home_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/headbutton_select"
+                android:text="@string/add"
+                android:textColor="#663300"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </Button>
+        </RelativeLayout>
+        <!-- 底部 -->
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/d_bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/delSel"
+                style="@style/bottom_button"
+                android:text="@string/delSel"
+                android:textColor="#82000a" />
+
+            <Button
+                android:id="@+id/allSel"
+                style="@style/bottom_button"
+                android:text="@string/allSel"
+                android:textColor="#82000a" />
+
+            <Button
+                android:id="@+id/noSel"
+                style="@style/bottom_button"
+                android:text="@string/noSel"
+                android:textColor="#82000a" />
+        </LinearLayout>
+
+        <!-- 中部列表区域 -->
+
+        <ListView
+            android:id="@+id/voiceHistorylistview"
+            style="@style/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/head"
+            android:drawingCacheQuality="auto"
+            android:scrollingCache="true" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

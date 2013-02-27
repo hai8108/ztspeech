@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmiddle" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 头部 -->
+
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/maintop"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/back"
+                style="@style/back_button"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/back"
+                android:layout_alignTop="@id/back"
+                android:layout_centerInParent="true"
+                android:autoText="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/historydetail"
+                android:textColor="#663300"
+                android:textSize="25sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+            android:id="@+id/save"
+            style="@style/home_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/headbutton_select"
+            android:text="@string/save"
+            android:textColor="#663300"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </Button>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/head"
+            android:layout_gravity="bottom|center"
+            android:gravity="center_vertical" 
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_send_msg"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/trans_btn_msg"
+                android:gravity="right|center"
+                android:text="@string/btn_send"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_send_email"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/trans_btn_mail"
+                android:gravity="right|center"
+                android:text="@string/btn_send_email"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/player_button"
+                android:gravity="center"
+                android:text="@string/play"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_speak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/trans_btn_record"
+                android:gravity="right|center"
+                android:text="@string/btn_speak"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/trans_btn_share"
+                android:gravity="right|center"
+                android:text="@string/btn_share"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/trans_btn_copy"
+                android:gravity="right|center"
+                android:text="@string/btn_copy"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/trans_btn_clear"
+                android:gravity="right|center"
+                android:text="@string/btn_clear"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editTextLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/linearLayout1"
+            android:layout_below="@id/menuLayout" >
+
+            <com.ztspeech.unisay.widget.ZTSEditText
+                android:id="@+id/mEditResult"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:focusable="true"
+                android:paddingTop="10dp"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

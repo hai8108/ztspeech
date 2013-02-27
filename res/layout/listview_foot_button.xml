@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/listitem1"
+        android:text="@string/more"
+        android:textColor="#663300"
+        android:textSize="25sp"
+        android:textStyle="bold" >
+    </Button>
+
+</RelativeLayout>

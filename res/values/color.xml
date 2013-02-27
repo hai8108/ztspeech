@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+  <color name="black">#000000</color>  
+  <color name="white">#FFFFFF</color> 
+  <drawable name="darkgray">#808080</drawable> 
+  <drawable name="white">#FFFFFF</drawable> 
+  <drawable name="blue">#0000FF</drawable> 
+  <color name="footerblack">#ffffffff</color>
+    <color name="header_color">#fff5f5f5</color>
+    <color name="text_color">#ffffffff</color>
+    <color name="fresh_color">#00000000</color>
+    <color name="text_color_F5">#fff5f5f5</color>
+    <color name="text_color_gray">#ff8c8c8e</color>
+    <color name="text_color_black">#ff000000</color>
+    <color name="text_color_gray_black">#cc000000</color>
+    <color name="text_color_green">#ff69b23f</color>
+    <color name="text_color_blue">#ff009bfd</color>
+    <color name="text_color_yellow">#ffdf9902</color>
+    <color name="background_transparent">#00000000</color>
+    <color name="background_half_transparent">#50000000</color>
+    <color name="background_incomplete_transparent">#01000000</color>
+    <color name="background_black">#ff000000</color>
+    <color name="background_light_black">#aa000000</color>
+    <color name="background_gray">#bb969696</color>
+    <color name="background_green">#e0bde7a4</color>
+    <color name="background_white">#ffffffff</color>
+    <color name="background_gray_white">#ffe5e5e5</color>
+    <color name="background_light_gray_white">#fff2f2f2</color>
+    <color name="background_web_light_gray">#ffeeeeee</color>
+    <color name="background_light_green">#aadfffdf</color>
+    <color name="dragndrop_background">#ff969696</color>
+    <color name="unfocused">#fffbfbfb</color>
+    <color name="selected">#ffe9f0f9</color>
+    <color name="title">#FFEC6102</color>
+    <!-- 多媒体 -->
+    <color name="btn_color_white">#ffffffff</color>
+    <color name="buttonColor">#ffffff</color>
+    <color name="titleColor">#ffcb99</color>
+    <drawable name="gray">#808080ff</drawable>
+</resources> 

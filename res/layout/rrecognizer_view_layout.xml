@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/center" >
+
+    <TextView
+        android:id="@+id/text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="开始录音" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_btn" >
+
+        <ImageButton
+            android:id="@+id/image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pprocress_button" />
+
+        <ImageView
+            android:id="@+id/imageviewanim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_btn"
+            android:layout_alignTop="@id/image_btn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_button_mic_waiting"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageviewL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nike_gps_mile_marker"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageviewR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nike_gps_mile_marker"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageviewleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_btn"
+            android:layout_alignTop="@id/image_btn"
+            android:layout_toLeftOf="@id/image_btn"
+            android:background="@drawable/main_wave_left_0" />
+
+        <ImageView
+            android:id="@+id/imageviewright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image_btn"
+            android:layout_alignTop="@id/image_btn"
+            android:layout_toRightOf="@id/image_btn"
+            android:background="@drawable/main_wave_right_0" />
+    </RelativeLayout>
+
+</RelativeLayout>

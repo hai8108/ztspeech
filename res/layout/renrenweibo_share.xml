@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <!-- 头部 -->
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/SharBack"
+            style="@style/back_button" >
+        </Button>
+
+        <TextView
+            android:id="@+id/renrenshareTitle"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dip"
+            android:autoText="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="紫冬与您分享"
+            android:textColor="#663300"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+    <!-- 中间 -->
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人人微博紫冬锐意分享内容："
+            android:textSize="20sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/rrsharecontent"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:layout_x="0px"
+            android:layout_y="52dip"
+            android:gravity="top"
+            android:editable="true"
+            android:singleLine="false"
+            android:textSize="18sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/rrsharebutton"
+            style="@style/home_button"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_gravity="right"
+            android:background="@drawable/headbutton_select"
+            android:text="分享"
+            android:textColor="#82000a" >
+        </Button>
+    </LinearLayout>
+</LinearLayout>

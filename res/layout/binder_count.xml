@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmiddle"
+    android:orientation="vertical" >
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/maintop"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/back"
+                style="@style/back_button"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" >
+            </Button>
+
+            <TextView
+                android:id="@+id/binderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/aboutBack"
+                android:layout_alignTop="@id/aboutBack"
+                android:layout_centerInParent="true"
+                android:autoText="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/bindercount"
+                android:textColor="#663300"
+                android:textSize="25sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Button
+                android:id="@+id/add"
+                style="@style/home_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/headbutton_select"
+                android:text="@string/add"
+                android:textColor="#663300"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" >
+
+            <Button
+                android:id="@+id/sina_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/trans_btn_binder"
+                android:text="@string/sina_binder" />
+
+            <TextView
+                android:id="@+id/sina_count_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sina_count"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/sina_binder"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/tencent_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sina_count_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/trans_btn_binder"
+                android:text="@string/tencent_binder" />
+
+            <TextView
+                android:id="@+id/tencent_count_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tencent_count"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/tencent_binder"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/renren_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tencent_count_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/trans_btn_binder"
+                android:text="@string/renren_binder" />
+
+            <TextView
+                android:id="@+id/renren_count_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/renren_count"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/renren_binder"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

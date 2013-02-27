@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmiddle"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/maintop"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/back_button"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" >
+        </Button>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back"
+            android:layout_alignTop="@id/back"
+            android:layout_centerInParent="true"
+            android:autoText="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/sina_oauth"
+            android:textColor="#663300"
+            android:textSize="25sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <Button
+            android:id="@+id/add"
+            style="@style/home_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/headbutton_select"
+            android:text="@string/add"
+            android:textColor="#663300"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone" >
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scroll_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_below="@id/scroll_layout"
+            style="@style/home_button"
+            android:background="@drawable/headbutton_select"
+            android:text="@string/back"
+            android:textColor="#663300"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>
